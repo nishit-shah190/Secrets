@@ -31,6 +31,7 @@ app.use(passport.session());
 mongoose.connect("mongodb://localhost:27017/userDB" , {useNewUrlParser:true});
 mongoose.set("useCreateIndex" , true);
 //userSchema.plugin(encrypt, {secret: process.env.SECRET , encryptedField:['password']});
+// final commit done
 
 const userSchema = new mongoose.Schema ({
     email: String,
